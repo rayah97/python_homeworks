@@ -1,5 +1,4 @@
 #Sets
-
 #1.Write a Python program to create set difference.
 def set_difference(set1, set2):
     return set1 - set2
@@ -41,3 +40,10 @@ def remove_item_from_set(s, item):
     if item in s:
         s.remove(item)
     return s
+
+
+print(set_difference(["green", "blue"],["blue", "yellow"]))
+print(find_elements_not_in_set(["green", "blue"],["blue", "yellow"]))
+print(no_common_elements(["green", "blue"],["blue", "yellow"]))
+print(is_value_in_set("blue",["green", "blue"]))
+print(remove_item([0, 1, 3, 4, 5],"5"))

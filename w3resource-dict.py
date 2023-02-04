@@ -1,15 +1,13 @@
 #Dict
-
 #1.Write a Python program to find the key of the maximum value in a dictionary
 def max_of_dict(dict):
     key_max_value = max(dict, key=dict.get)
     return key_max_value
 
 #2. Write a Python program to transform a dictionary into a list of tuples.
-def transform_dict_to_list (dict):
+def transform_dict_to_list(dict):
     list_of_tuples = list(dict.items())
     return list_of_tuples
-
 
 #3.Write a Python program to combine two lists into a dictionary. The elements of the first one serve as keys and the elements of the second one serve as values. Each item in the first list must be unique and hashable.
 def to_dict(list1,list2):
@@ -53,3 +51,13 @@ def generate_dictionary(n):
     for i in range(1, n+1):
         d[i] = i*i
     return d
+
+print(max_of_dict({'Theodore': 19, 'Roxanne': 22, 'Mathew': 21, 'Betty': 20}))
+print(transform_dict_to_list({'Red': 1, 'Green': 3, 'White': 5, 'Black': 2, 'Pink': 4}))
+print(to_dict(['a', 'b', 'c', 'd', 'e', 'f'],[1, 2, 3, 4, 5]))
+print(find_length_of_dict_values({1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}))
+print(verify_values_in_dict({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}))
+print(print_dict_line_by_line({1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}))
+print(sort_list_alphabetically({'n1': [2, 3, 1], 'n2': [5, 1, 2], 'n3': [3, 2, 4]}))
+print(sum_dict({'data1':100,'data2':-54,'data3':247}))
+print(generate_dictionary(7))

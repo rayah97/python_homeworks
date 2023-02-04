@@ -1,5 +1,4 @@
 #LISTS
-
 # 1. Write a Python program to find the second largest number in a list
 def second_largest (list):
     list.sort()
@@ -70,3 +69,15 @@ def count_lowercase_letters(words):
             if char.islower():
                 count += 1
     return count
+
+
+print(second_largest([1, 1, 1, 0, 0, 0, 2, -2, -2]))
+print (is_sorted[1, 2, 4, 6, 8, 10, 12, 14, 16, 17])
+print(is_unique([1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]))
+print(remove_list_from_another ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],[2, 4, 6, 8]))
+print (contains_substring(['red', 'black', 'white', 'green', 'orange'],"ack"))
+print(min_max_index([12, 33, 23, 10, 67, 89, 45, 667, 23, 12, 11, 10, 54]))
+print (remove_words(['red', 'green', 'blue', 'white', 'black', 'orange'],['white', 'orange']))
+print(sort_list_based_on_indexes(['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk'],[3, 2, 6, 4, 1, 5]))
+print(generate_fibonacci(10))
+print(find_element_with_equal_sum([0, 9, 2, 4, 5, 6]))

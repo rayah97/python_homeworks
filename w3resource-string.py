@@ -1,5 +1,4 @@
 #STRING
-
 #1.Write a Python program to get a string from a given string where all occurrences of its first char have been changed to '$', except the first char itself.
 def change_occurrences(s):
     first_char = s[0]
@@ -31,6 +30,7 @@ def sort_distinct_words(words):
 #5. Write a Python function to insert a string in the middle of a string. 
 def insert_string_middle(string, insert):
     mid = len(string) // 2
+    return string[:mid] + string + string[mid:]
     
 #6. Write a Python program to find string similarity between two given strings
 def srtings_similarity(str1, str2):
@@ -79,3 +79,15 @@ def split_on_last(string, delimiter):
 #10.Write a Python program to lowercase the first n characters in a string. 
 def lowercase_first_n_chars(string, n):
     return string[:n].lower() + string[n:]
+
+
+print (lowercase_first_n_chars("HOLAAMIgsdvsjh",4))
+print (split_on_last("w,3,r,e,s,o,u,r,c,e",2))
+print (longest_common_substring("abcdefgh","xswerabcdwd"))
+print (wrap_text("ed 12 black 45 green"),3)
+print (srtings_similarity("Python Exercises", "Python Exercisess"))
+print (insert_string_middle('{{}}', 'PHP'))
+print (sort_distinct_words('red, white, black, red, green, black'))
+print (find_longest_word('red, white, black, red, green, blackfsdfdsf'))
+print (swap_and_concatenate('abc', 'xyz'))
+print (change_occurrences("restart"))
