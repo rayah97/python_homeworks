@@ -71,13 +71,37 @@ def count_lowercase_letters(words):
     return count
 
 
-print(second_largest([1, 1, 1, 0, 0, 0, 2, -2, -2]))
-print (is_sorted[1, 2, 4, 6, 8, 10, 12, 14, 16, 17])
-print(is_unique([1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]))
-print(remove_list_from_another ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],[2, 4, 6, 8]))
-print (contains_substring(['red', 'black', 'white', 'green', 'orange'],"ack"))
-print(min_max_index([12, 33, 23, 10, 67, 89, 45, 667, 23, 12, 11, 10, 54]))
-print (remove_words(['red', 'green', 'blue', 'white', 'black', 'orange'],['white', 'orange']))
-print(sort_list_based_on_indexes(['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk'],[3, 2, 6, 4, 1, 5]))
-print(generate_fibonacci(10))
-print(find_element_with_equal_sum([0, 9, 2, 4, 5, 6]))
+#Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples. 
+
+#Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+
+def sort_tuples (list):
+    sorted_list = []
+    biggest=0
+    for i in list:
+        if i[1]>biggest:
+            biggest=i[1]
+            sorted_list.append(list[i])
+    return( sorted_list)
+
+
+
+print (sort_tuples([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+
+
+
+
+
+
+
+# print(second_largest([1, 1, 1, 0, 0, 0, 2, -2, -2]))
+# print (is_sorted[1, 2, 4, 6, 8, 10, 12, 14, 16, 17])
+# print(is_unique([1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]))
+# print(remove_list_from_another ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],[2, 4, 6, 8]))
+# print (contains_substring(['red', 'black', 'white', 'green', 'orange'],"ack"))
+# print(min_max_index([12, 33, 23, 10, 67, 89, 45, 667, 23, 12, 11, 10, 54]))
+# print (remove_words(['red', 'green', 'blue', 'white', 'black', 'orange'],['white', 'orange']))
+# print(sort_list_based_on_indexes(['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk'],[3, 2, 6, 4, 1, 5]))
+# print(generate_fibonacci(10))
+# print(find_element_with_equal_sum([0, 9, 2, 4, 5, 6]))

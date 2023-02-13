@@ -52,6 +52,43 @@ def generate_dictionary(n):
         d[i] = i*i
     return d
 
+
+def common_adding (dict1, dict2):
+    new_dict={}
+    for i in dict1.keys():
+        for j in dict2.keys():
+            if i == j:
+                new_dict[i]= dict1[i]+dict2[j]
+            else:
+                new_dict[i]=dict1[i]
+
+    return (new_dict)
+
+
+#Write a Python program to get the top three items in a shop.
+
+def top_items(dict):
+    top = dict[0]
+    top_items={}
+    count=0
+    while count <3:
+        for i in dict.keys():
+            if dict[i]>top:
+                top_items[i]=dict.valus()
+                count+=1
+    return top_items
+
+
+#Write a Python program to sort Counter by value.
+
+
+
+            
+
+
+
+
+
 print(max_of_dict({'Theodore': 19, 'Roxanne': 22, 'Mathew': 21, 'Betty': 20}))
 print(transform_dict_to_list({'Red': 1, 'Green': 3, 'White': 5, 'Black': 2, 'Pink': 4}))
 print(to_dict(['a', 'b', 'c', 'd', 'e', 'f'],[1, 2, 3, 4, 5]))
