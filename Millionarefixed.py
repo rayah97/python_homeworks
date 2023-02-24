@@ -1,5 +1,6 @@
 import random
 
+
 questions = [
     'What is the capital of France?', 
     'What is the largest planet in our solar system?', 
