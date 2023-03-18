@@ -26,6 +26,10 @@ def unique_keys_from_dict(dict):
             non_repeated_keys.append(key)
     return non_repeated_keys
 
+def unique_keys_from_dict2(dict):
+    keys_list = list(dict.keys())
+    return keys_list
+
 #3. Filter the long word from the list ( long means word =4 or more chars)
 
 def long_word_from_list(words):
